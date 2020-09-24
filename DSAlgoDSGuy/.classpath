@@ -4,5 +4,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="GreedyAlgo"/>
 	<classpathentry kind="src" path="Divide&amp;Conquer"/>
+	<classpathentry kind="src" path="Recursion"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
