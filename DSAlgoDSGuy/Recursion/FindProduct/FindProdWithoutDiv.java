@@ -1,3 +1,7 @@
+/*
+ * Replace each element of an array with product of every other element without using divison operator
+*/
+
 package FindProduct;
 
 import java.util.Arrays;
@@ -14,11 +18,11 @@ public class FindProdWithoutDiv {
 		
 		// take back up of current element
 		int cur = a[i];
-		
+//		System.out.println("currrent "+cur);
 		//calculate product of the right sub array
 		int right = findProduct(a, n, left*a[i], i+1);
 		
-		System.out.println("right = "+right+" cur = "+cur+" left = "+left+" i "+i);
+//		System.out.println("right = "+right+" cur = "+cur+" left = "+left+" i "+i);
 		
 		//replace current element with the product of left and right sub array
 		a[i] = left * right;
@@ -26,7 +30,6 @@ public class FindProdWithoutDiv {
 		//return product of right sub array including current element
 		return cur * right;
 	}
-	
 	
 	//driver method
 	public static void main(String[] args) {
